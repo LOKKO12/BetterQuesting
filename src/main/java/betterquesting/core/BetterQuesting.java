@@ -18,6 +18,7 @@ import betterquesting.api.placeholders.FluidPlaceholder;
 import betterquesting.api.placeholders.ItemPlaceholder;
 import betterquesting.blocks.BlockSubmitStation;
 import betterquesting.blocks.TileSubmitStation;
+import betterquesting.blocks.BlockDLB;
 import betterquesting.client.CreativeTabQuesting;
 import betterquesting.commands.BQ_CommandAdmin;
 import betterquesting.commands.BQ_CommandDebug;
@@ -68,7 +69,8 @@ public class BetterQuesting
 	public static Item guideBook = new ItemGuideBook();
 	
 	public static Block submitStation = new BlockSubmitStation();
-    
+	public static Block BlockDLB = new BlockDLB();
+	
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
@@ -102,6 +104,7 @@ public class BetterQuesting
     	GameRegistry.registerItem(guideBook, "guide_book");
     	
     	GameRegistry.registerBlock(submitStation, "submit_station");
+    	GameRegistry.registerBlock(BlockDLB, "BlockDLB");
     	GameRegistry.registerTileEntity(TileSubmitStation.class, "submit_station");
     	
     	GameRegistry.addShapelessRecipe(new ItemStack(submitStation), new ItemStack(Items.book), new ItemStack(Blocks.glass), new ItemStack(Blocks.chest));

@@ -2,6 +2,12 @@
 ## Eclipse
 #################
 
+.gradle/
+.metadata/
+.settings/
+bin/
+build/
+eclipse/
 *.pydevproject
 .project
 .metadata
